@@ -1,18 +1,69 @@
 # vue-input-streaming
 
-> A Vue.js project
+> A Vue2 Input Streaming RealTime And two way data binding broadcasting with Pusher
 
-## Build Setup
+<p align="center">
+  <img src ="https://i.imgur.com/oBLArRm.gif" />
+</p>
+
+
+## Setup Project
 
 ``` bash
-# install dependencies
+# Git Clone Project
+git clone git@github.com:aofdev/vue-input-streaming.git
+
+# Cd project
+cd vue-input-streaming
+
+# install dependencies project
+npm install || yarn install
+
+```
+
+## Setup server app
+
+``` bash
+# Cd folder server-app 
+cd server-app
+
+# install dependencies 
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+```
 
-# build for production with minification
-npm run build
+## Config
+### Step 1
+ Create a new project or click on an existing project.  [Pusher Console](https://dashboard.pusher.com/)  
+ insert key At folder/file ``server-app/app.js``
+``` bash
+const pusher = new Pusher({
+    appId: '',
+    key: '',
+    secret: '',
+    cluster: '',
+    encrypted: true
+});
+```
+### Step 2
+insert key At file ``input.vue``
+``` bash
+  const pusher = new Pusher('', {
+    cluster: '',
+    encrypted: true
+  });
+```
 
+## Running Project
+
+``` bash
+# run server app 
+node app
+
+# run project app
+npm run dev || yarn dev
+
+# build for production with minification and to build Progressive Web Apps
+npm run build || yarn build
 
 ```
