@@ -46,12 +46,12 @@ const pusher = new Pusher({
 });
 ```
 ### Step 2
-insert key At file ``input.vue``
+insert key At file ``Input.vue``
 ``` bash
-  const pusher = new Pusher('', {
-    cluster: '',
-    encrypted: true
-  });
+ const pusher = new Pusher('', {
+   cluster: '',
+   encrypted: true
+ });
 ```
 
 ## Running Project
