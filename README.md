@@ -13,7 +13,7 @@
 # Git Clone Project
 git clone git@github.com:aofdev/vue-input-streaming.git
 
-# Cd project
+# CD project
 cd vue-input-streaming
 
 # install dependencies project
@@ -24,7 +24,7 @@ npm install || yarn install
 ## Setup server app
 
 ``` bash
-# Cd folder server-app 
+# CD folder server-app 
 cd server-app
 
 # install dependencies 
